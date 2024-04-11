@@ -1,3 +1,3 @@
 FROM scratch
-COPY ./go-template /
-ENTRYPOINT ["/go-template"]
+COPY ./spectre /
+ENTRYPOINT ["/spectre"]

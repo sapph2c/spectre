@@ -13,7 +13,7 @@ bootstrap: # Sets up go development environment and cobra
 
 clean: # Deletes go.mod, go.sum, and cmd directories
 	@rm -rf cmd/ go.mod go.sum main.go
-	@sed -i '' 's/"\.": "1\.1\.1"/"\.": "0\.1\.0"/g' .release-please-manifest.json
+	@sed -i '' 's/"\.": "1\.1\.3"/"\.": "0\.1\.0"/g' .release-please-manifest.json
 	@sed -i '' "s/go-template/$$(basename -s .git $$(git config --get remote.origin.url))/g" Dockerfile
 
 help: # Show help for each of the Makefile recipes.
